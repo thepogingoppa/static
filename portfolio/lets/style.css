@@ -1,0 +1,27 @@
+* { 
+    border: 0;
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    display: grid;
+    grid-template-areas: 
+    "h h h n";
+    height: 10vh;
+}
+.home {
+    grid-area: h;
+    background-color: blue;
+}
+nav {
+    background-color: blanchedalmond;
+    grid-area: n;
+
+    display: flex;
+    justify-content: flex-end; 
+}
+nav div {
+    text-align: center;
+    padding: 5vh;
+}

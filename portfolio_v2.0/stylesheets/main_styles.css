@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Share+Tech+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root {
+    /* website color scheme */
+    --holo_blue: #1D262F;
+    --sky_blue: #7AB4E7;
+
+    /* text editor colors */
+    --string_green: #34FE9C;
+    --purple: #A364D6;
+    --comment_gray: #656565;
+    --this_teal: #5B83A6;
+    --attribute_blue: #54A8F2;
+    --equal_green: #1D9259;
+    --bracket_blue: #1400FF; 
+}
+body {
+    margin-left: 5vh;
+    margin-right: 5vh;
+    background-color: var(--holo_blue);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    grid-template-columns: repeat(14, auto);
+    gap: 10px;
+}
+
+/* start of Navigation styles */
+nav {   
+    grid-column: 1 / 12;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    
+    font-size: 8vh;
+    font-family: Oswald, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.less_and_greater_logo {
+    color: var(--sky_blue);
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_buttons {
+    padding: 3.5vh;
+    font-size: 25px;
+    font-family: Oswald, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+/* styles for the landing page */
+#home {
+    grid-column: 1 / 12;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.jozua_patalan {
+    width:  36.5%;
+    height: auto;
+}
+.job {
+    font-weight: bold;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-top: 7%;
+}
+article h1 {
+    font-size: 13vh;
+    font-family: Oswald;
+}
+.full_name,
+.job {
+    color: var(--sky_blue);
+}
+.get_in_touch {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 2.5vh;
+    background-color: var(--sky_blue);
+    width: 15%;
+    border-radius: 2em;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+/* styles for the about section */
+#about {
+    grid-column: 1 / 12;
+}
+.section_title {    
+    font-size: 8vh;
+    font-family: Oswald, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.text_editor {
+    font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-left: 50px;
+}
+/* colo highlighting */
+.green {
+    color: var(--string_green);
+}
+.blue {
+    color: var(--attribute_blue);
+}
+.gray {
+    color: var(--comment_gray);
+}
+.dark_blue {
+    color: var(--this_teal);
+}
+.purple {
+    color: white;
+}
+.yellow {
+    color: var(--purple);
+}
+.dark_green {
+    color: var(--equal_green);
+}
+.light_purple {
+    color: violet;
+}
+.vivid_blue {
+    color: var(--bracket_blue);
+}
+
+ /* indention */
+ .line_2,
+ .line_3,
+ .line_7,
+ .line_8,
+ .line_13,
+ .line_14,
+ .line_18 {
+    margin-left: 50px;
+ }
+
+ .line_4,
+ .line_5,
+ .line_6,
+ .line_9,
+ .line_10,
+ .line_11,
+ .line_12,
+ .line_15,
+ .line_16,
+ .line_17 {
+    margin-left: 100px;
+ }
+
+#work {
+    grid-column: 1 / 12;
+}
+#contact {
+    grid-column: 1 / 12;
+}
+.social_media_icons {
+    width: 2%;
+    height: auto;
+}
+footer {
+    grid-column: 1 / 12;
+}

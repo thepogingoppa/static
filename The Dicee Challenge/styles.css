@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  --black: #1E1E1E;
+  --deep-orange: #FF5600;
+  --mid-orange: #F38400;
+  --light-orange: #FFAF56;
+  --white: #ffff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+  background-color: var(--black);
+  color: var(--mid-orange);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10% 25% 2fr 10% 10%;
+}
+
+.container > h1 {
+  color: var(--deep-orange);
+  font-family: bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.dice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player1 {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.player2 {
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+}
+
+.container p {
+  color: var(--light-orange);
+  font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 5;
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+:root {
+    --pink: #ffa9ab;
+    --black:#171717;
+}
+strong {
+    color: var(--pink);
+}
+section { /* Landing Page Styles */
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    height: auto;
+    width: 100%;
+}
+.my-name {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: left;
+    font-size: 2.5vh;
+    line-height: 5vh;
+    margin-left: 40vh;
+}
+.image {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.me {
+    width: 70%;
+    height: auto;
+}
+.text p {
+    padding: 10px;
+    margin-top: 25px;
+}
+.my-name {
+    width:auto;
+    display: flex;
+    flex-direction: row;
+}
+.letter {
+    font-family: 'Caveat Brush', cursive, sans-serif;
+    font-size: 15vh;
+    letter-spacing: -5px;  
+}
+.letter:hover {
+    transform: scale(1.5);
+    transition: 50ms;
+    color: var(--pink);
+    font-weight: bold;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+}
+
+:root {
+    --primary-color: #181818;
+    --secondary-color: #0f1011;
+    --tertiary-color: #424549;
+    --accent: #2382c1;
+}
+
+@media screen and (max-width: 500px) {
+    header > h1 {
+        font-size: 3rem;
+    }
+
+    header > p {
+        font-size: 1rem;
+    }
+}
+
+body {
+    display:grid;
+    grid-template-columns: repeat(12,auto);
+    grid-template-rows: repeat(3, auto);
+    
+    height: 100vh;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    color: white;
+    height: 10vh;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav > div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 5rem;
+    height: auto;
+}
+
+section {
+    color:white;
+    background-color: var(--secondary-color);
+    grid-column: 1 / span 12;
+    height: 90vh;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h1 > span {
+    color: var(--accent);   
+
+}
+
+header {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+.hero-section > button {
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 5%;
+    color: white;
+    text-shadow: 2rem;
+    width: 10rem;
+}
+
+footer{
+    background-color:var(--secondary-color);
+    grid-column: 1 / span 12;
+    height:20vh;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}

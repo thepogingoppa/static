@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap');
+
+:Root {
+    --blue: #1D5D9B;
+    --light-blue: #75C2F6;
+    --cat-yellow: #F4D160;
+    --light-yellow: #FBEEAC;
+}
+
+* {
+    border: 0px;
+    margin: 0px;    
+    padding: 0px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: var(--blue);
+    color: var(--light-yellow);
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 10vh;
+}
+
+span {
+    text-align: center;
+    font-family: Caveat, cursive; 
+    font-size: 25vh;
+    color: white;
+}
+
+.container p {
+    font-size: 1rem;
+}

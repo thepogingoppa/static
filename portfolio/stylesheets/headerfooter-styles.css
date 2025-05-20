@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+:root {
+    --pink: #ffa9ab;
+    --black:#171717;
+    --yellow:#f1d3a2;
+}
+* { 
+    border: 0;
+    margin: 0;
+    padding: 0; 
+
+    font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+body { /* Body Styles */
+    background-color: var(--black);
+    color:white;
+    display: grid;
+    grid-template-rows: 10vh 90vh 30vh;
+}
+#home {
+    text-decoration: none;
+    color: white;
+}
+.title {
+    font-family: 'Caveat Brush', cursive, sans-serif;
+    letter-spacing: -2px;
+    font-size: 5vh;
+}
+nav a {
+    text-decoration: none;
+    color:var(--pink);
+}
+nav a:hover {
+    background-color: var(--pink);
+    transition: 0.5s;
+    color: white;
+}
+header { /* Header Styles */
+    display: grid;
+    grid-template-areas: 
+    "h n";
+    height: auto;
+    width:100%;
+}
+.logo {
+    width: 4vh;
+    border-radius: 500px;
+}
+.home {
+    grid-area: h;
+    padding-left: 10vh;
+    padding-top: 2vh;
+}
+nav {
+    grid-area: n;
+    display: flex;
+    justify-content: flex-end; 
+}
+nav div {
+    text-align: center;
+    padding: 5vh;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+}
+footer h3 {
+    font-size:3.5vh;
+    color:var(--pink)
+}
+footer span {
+    font-size: 2vh;
+}
+footer div {
+    padding: 5vh;
+}
+.socials {
+    width: 4vh;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+}
+.phone {
+    display: flex;
+    flex-direction: column;
+}
