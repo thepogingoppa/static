@@ -24,6 +24,7 @@
     margin: 0;
     border: 0;
 }
+
 @media (max-width: 500px) {
     body > .pages-navigation {
         padding-bottom: 1rem;
